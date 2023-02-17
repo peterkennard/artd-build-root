@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b0ba31ff-a7d8-4d8a-948c-a784fc67f8b0" name="Changes" comment="new project setup script with build files as part of project">
+      <change afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artd-root.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/peterk.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ensure-rakish.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rake-targets.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rakefile.rb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="google-angle" />
+      </map>
+    </option>
+    <option name="RECENT_COMMON_BRANCH" value="peters-google-angle" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IK6ZKuKfAo8BtajjMBjPI90L87" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/build/include" />
+      <recent name="$PROJECT_DIR$/oss-libs/ogl-glad" />
+      <recent name="$PROJECT_DIR$/artdlib-cpp/artd-jlib-test" />
+      <recent name="$PROJECT_DIR$/glfw-angle-test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/oss-libs/ogl-glad/glad" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="echoProperties" type="AntRunConfiguration">
+      <antsettings antfile="file://$PROJECT_DIR$/rake-targets.xml" target="echoProperties" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0ba31ff-a7d8-4d8a-948c-a784fc67f8b0" name="Changes" comment="" />
+      <created>1669917983155</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669917983155</updated>
+      <workItem from="1669917984740" duration="6034000" />
+      <workItem from="1669930051820" duration="19476000" />
+      <workItem from="1669973279260" duration="21541000" />
+      <workItem from="1670039902252" duration="7827000" />
+      <workItem from="1670165199566" duration="16354000" />
+      <workItem from="1670285521094" duration="4995000" />
+      <workItem from="1670444329514" duration="49563000" />
+      <workItem from="1670598859391" duration="7390000" />
+      <workItem from="1670618762161" duration="13928000" />
+      <workItem from="1670698233975" duration="1324000" />
+      <workItem from="1671224119828" duration="2226000" />
+      <workItem from="1673486942901" duration="2114000" />
+      <workItem from="1673489145729" duration="7286000" />
+      <workItem from="1673560385118" duration="1466000" />
+      <workItem from="1673745207214" duration="7507000" />
+      <workItem from="1674294288703" duration="569000" />
+      <workItem from="1674294864749" duration="2107000" />
+      <workItem from="1674349055392" duration="1205000" />
+      <workItem from="1674399285146" duration="7113000" />
+      <workItem from="1675004714732" duration="1492000" />
+      <workItem from="1675111204509" duration="25000" />
+      <workItem from="1675265219703" duration="7231000" />
+      <workItem from="1675445905544" duration="1000" />
+      <workItem from="1675445910876" duration="7241000" />
+      <workItem from="1675547168095" duration="16200000" />
+      <workItem from="1676591342645" duration="922000" />
+      <workItem from="1676592357145" duration="4715000" />
+      <workItem from="1676659649341" duration="8091000" />
+    </task>
+    <task id="LOCAL-00001" summary="fix setup task to handle an empty new machine">
+      <created>1669919180729</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669919180729</updated>
+    </task>
+    <task id="LOCAL-00002" summary="moved raspberi pi check to rakish">
+      <created>1669928355384</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669928355384</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commented out old references to EMSDK">
+      <created>1669930093149</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669930093149</updated>
+    </task>
+    <task id="LOCAL-00004" summary="in cmake made suffi target platform dependent">
+      <created>1669939535294</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669939535294</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix merge items">
+      <created>1669954774637</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669954774637</updated>
+    </task>
+    <task id="LOCAL-00006" summary="got freetype building on Mac">
+      <created>1670007189299</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670007189299</updated>
+    </task>
+    <task id="LOCAL-00007" summary="cleanup build scripts for oss-libs">
+      <created>1670009047890</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670009047890</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix url and .gitignore">
+      <created>1670017491379</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670017491379</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix url and .gitignore">
+      <created>1670017633798</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670017633798</updated>
+    </task>
+    <task id="LOCAL-00010" summary="moved suffi for targetPlatform to Rakish">
+      <created>1670038964451</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670038964451</updated>
+    </task>
+    <task id="LOCAL-00011" summary="repository config">
+      <created>1670039625232</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670039625232</updated>
+    </task>
+    <task id="LOCAL-00012" summary="crlf issues">
+      <created>1670039787383</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1670039787383</updated>
+    </task>
+    <task id="LOCAL-00013" summary="google angle rakefile for MacOS works">
+      <created>1670276512139</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670276512139</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added oss-glfw project">
+      <created>1670284807991</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670284807991</updated>
+    </task>
+    <task id="LOCAL-00015" summary="glfw work">
+      <created>1670285434092</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670285434092</updated>
+    </task>
+    <task id="LOCAL-00016" summary="glfw work">
+      <created>1670286071879</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1670286071879</updated>
+    </task>
+    <task id="LOCAL-00017" summary="added glfw-angle-test project">
+      <created>1670445311542</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1670445311542</updated>
+    </task>
+    <task id="LOCAL-00018" summary="got it to compile with Apple CLang compiler">
+      <created>1670464231563</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1670464231563</updated>
+    </task>
+    <task id="LOCAL-00019" summary="added generated files to .gitignore files">
+      <created>1670465651896</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1670465651896</updated>
+    </task>
+    <task id="LOCAL-00020" summary="got core to build on Mac">
+      <created>1670495714134</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1670495714134</updated>
+    </task>
+    <task id="LOCAL-00021" summary="jlib-io builds on mac">
+      <created>1670496801914</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1670496801914</updated>
+    </task>
+    <task id="LOCAL-00022" summary="jlib-util builds on mac">
+      <created>1670507615868</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1670507615868</updated>
+    </task>
+    <task id="LOCAL-00023" summary="artd-bml-base builds on mac">
+      <created>1670508680255</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1670508680255</updated>
+    </task>
+    <task id="LOCAL-00024" summary="artd-vecmath and artd-geometry now build on mac">
+      <created>1670542140298</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1670542140298</updated>
+    </task>
+    <task id="LOCAL-00025" summary="minor fix for FilePath on unix with std::filesystem">
+      <created>1670555977003</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1670555977003</updated>
+    </task>
+    <task id="LOCAL-00026" summary="work on getting glfw test sample to work with angle">
+      <created>1670597237185</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1670597237185</updated>
+    </task>
+    <task id="LOCAL-00027" summary="fix pile of warnings from XCode compiler">
+      <created>1670693341627</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1670693341627</updated>
+    </task>
+    <task id="LOCAL-00028" summary="fix pile of warnings from XCode compiler">
+      <created>1673490471825</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1673490471825</updated>
+    </task>
+    <task id="LOCAL-00029" summary="get checked in version to build">
+      <created>1673491786897</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1673491786897</updated>
+    </task>
+    <task id="LOCAL-00030" summary="doc files">
+      <created>1673752091434</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1673752091434</updated>
+    </task>
+    <task id="LOCAL-00031" summary="comments">
+      <created>1673752202832</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1673752202832</updated>
+    </task>
+    <task id="LOCAL-00032" summary="ed out artdlib-test app build">
+      <created>1674296799358</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1674296799358</updated>
+    </task>
+    <task id="LOCAL-00033" summary="export additional include links from the google angle project to build/include">
+      <created>1675366253309</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1675366253309</updated>
+    </task>
+    <task id="LOCAL-00034" summary="put all items hard coded into the CMakeLists.txt for the test app.">
+      <created>1675545766434</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1675545766434</updated>
+    </task>
+    <task id="LOCAL-00035" summary="got rid of unneeded debug print">
+      <created>1675546944444</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1675546944444</updated>
+    </task>
+    <task id="LOCAL-00036" summary="use macro to set include folder">
+      <created>1675638900235</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1675638900235</updated>
+    </task>
+    <task id="LOCAL-00037" summary="moved library output area to ../libDebug for CMake outputs from rake scripts.">
+      <created>1675645902913</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1675645902913</updated>
+    </task>
+    <task id="LOCAL-00038" summary="added path setting rakish">
+      <created>1676662130274</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1676662130274</updated>
+    </task>
+    <task id="LOCAL-00039" summary="added path setting rakish">
+      <created>1676666357151</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1676666357151</updated>
+    </task>
+    <task id="LOCAL-00040" summary="fix bad quote">
+      <created>1676669922365</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1676669922365</updated>
+    </task>
+    <task id="LOCAL-00041" summary="remove debug print">
+      <created>1676670734079</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1676670734079</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/#(myDir}/artd-rakish" />
+      <path value="$PROJECT_DIR$/#./artd-rakish" />
+    </ignored-roots>
+    <MESSAGE value="glfw work" />
+    <MESSAGE value="added glfw-angle-test project" />
+    <MESSAGE value="got it to compile with Apple CLang compiler" />
+    <MESSAGE value="added generated files to .gitignore files" />
+    <MESSAGE value="got core to build on Mac" />
+    <MESSAGE value="jlib-io builds on mac" />
+    <MESSAGE value="jlib-util builds on mac" />
+    <MESSAGE value="artd-bml-base builds on mac" />
+    <MESSAGE value="artd-vecmath and artd-geometry now build on mac" />
+    <MESSAGE value="minor fix for FilePath on unix with std::filesystem" />
+    <MESSAGE value="work on getting glfw test sample to work with angle" />
+    <MESSAGE value="fix pile of warnings from XCode compiler" />
+    <MESSAGE value="get checked in version to build" />
+    <MESSAGE value="doc files" />
+    <MESSAGE value="comments" />
+    <MESSAGE value="ed out artdlib-test app build" />
+    <MESSAGE value="export additional include links from the google angle project to build/include" />
+    <MESSAGE value="put all items hard coded into the CMakeLists.txt for the test app." />
+    <MESSAGE value="got rid of unneeded debug print" />
+    <MESSAGE value="use macro to set include folder" />
+    <MESSAGE value="moved library output area to ../libDebug for CMake outputs from rake scripts." />
+    <MESSAGE value="added path setting rakish" />
+    <MESSAGE value="fix bad quote" />
+    <MESSAGE value="remove debug print" />
+    <MESSAGE value="new project setup script with build files as part of project" />
+    <option name="LAST_COMMIT_MESSAGE" value="new project setup script with build files as part of project" />
+  </component>
+</project>

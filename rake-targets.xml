@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="rake-targets" default="echoProperties">
+
+    <import file="./artd-rakish/bin/artd-rakish-bin/call-rake.xml" />
+
+    <property environment="env" />
+
+    <target name="echoProperties" description="dump properties to console">
+        <echoproperties/>
+    </target>
+
+</project>
