@@ -4,18 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0ba31ff-a7d8-4d8a-948c-a784fc67f8b0" name="Changes" comment="new project setup script with build files as part of project">
-      <change afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artd-root.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/peterk.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ensure-rakish.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rake-targets.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rakefile.rb" afterDir="false" />
+    <list default="true" id="b0ba31ff-a7d8-4d8a-948c-a784fc67f8b0" name="Changes" comment="remove debug print">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artdlib-cpp/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artdlib-cpp/artd-lib-logger/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artdlib-cpp/artd-lib-logger/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artdlib-cpp/artd-lib-logger/Logger.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artdlib-cpp/artd-lib-logger/include/artd/Logger.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artdlib-cpp/artd-lib-logger/rakefile.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artdlib-cpp/build-options.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artdlib-cpp/rakefile.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build-options.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build-scripts/rakish/CMakeCppTools.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build-scripts/rakish/WasmCppTools.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rakefile.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rakefile.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +34,7 @@
       </map>
     </option>
     <option name="RECENT_COMMON_BRANCH" value="peters-google-angle" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/artdlib-cpp" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -60,10 +65,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/build/include" />
-      <recent name="$PROJECT_DIR$/oss-libs/ogl-glad" />
-      <recent name="$PROJECT_DIR$/artdlib-cpp/artd-jlib-test" />
-      <recent name="$PROJECT_DIR$/glfw-angle-test" />
+      <recent name="$PROJECT_DIR$/build-scripts" />
+      <recent name="$PROJECT_DIR$/artdlib-cpp/artd-lib-logger/include" />
+      <recent name="$PROJECT_DIR$/artdlib-cpp/artd-lib-logger" />
+      <recent name="$PROJECT_DIR$/artdlib-cpp/artd-lib-logger/include/artd" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/oss-libs/ogl-glad/glad" />
@@ -110,7 +115,7 @@
       <workItem from="1675547168095" duration="16200000" />
       <workItem from="1676591342645" duration="922000" />
       <workItem from="1676592357145" duration="4715000" />
-      <workItem from="1676659649341" duration="8091000" />
+      <workItem from="1676659649341" duration="21226000" />
     </task>
     <task id="LOCAL-00001" summary="fix setup task to handle an empty new machine">
       <created>1669919180729</created>
@@ -399,7 +404,28 @@
       <option name="project" value="LOCAL" />
       <updated>1676670734079</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="new project setup script with build files as part of project">
+      <created>1676671037606</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1676671037606</updated>
+    </task>
+    <task id="LOCAL-00043" summary="check for rakefile that doesn't define a project">
+      <created>1676689466617</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1676689466617</updated>
+    </task>
+    <task id="LOCAL-00044" summary="remove debug print">
+      <created>1676729132032</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1676729132032</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,7 +447,6 @@
       <path value="$PROJECT_DIR$/#(myDir}/artd-rakish" />
       <path value="$PROJECT_DIR$/#./artd-rakish" />
     </ignored-roots>
-    <MESSAGE value="glfw work" />
     <MESSAGE value="added glfw-angle-test project" />
     <MESSAGE value="got it to compile with Apple CLang compiler" />
     <MESSAGE value="added generated files to .gitignore files" />
@@ -444,8 +469,9 @@
     <MESSAGE value="moved library output area to ../libDebug for CMake outputs from rake scripts." />
     <MESSAGE value="added path setting rakish" />
     <MESSAGE value="fix bad quote" />
-    <MESSAGE value="remove debug print" />
     <MESSAGE value="new project setup script with build files as part of project" />
-    <option name="LAST_COMMIT_MESSAGE" value="new project setup script with build files as part of project" />
+    <MESSAGE value="check for rakefile that doesn't define a project" />
+    <MESSAGE value="remove debug print" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove debug print" />
   </component>
 </project>
