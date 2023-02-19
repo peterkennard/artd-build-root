@@ -27,13 +27,13 @@ if(cfg.targetPlatform =~ /MacOS/ )
     end
 end
 
-log.debug("######## #{subdirs}");
 
 Rakish.Project(
     :includes=>[Rakish::CppProjectModule, Rakish::GitModule ],
 	:name 		=> "artd-lib",
 	:id         => "371FD2F5-ED71-0114-8F52-D889C786B495",
-	:dependsUpon => subdirs
+	:dependsUpon => subdirs,
+    :dependsUponOpt => [ './artdlib-test' ]
 ) do
 
     export task :cleanAll => sourceSubdir do |t|
