@@ -7,3 +7,4 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 add_subdirectory ("artdlib-cpp")
 add_subdirectory ("artdlib-test")
+add_subdirectory ("third-party")

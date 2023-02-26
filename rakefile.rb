@@ -17,7 +17,8 @@ task :setup => [:libCppSetup] do
 end
 
 subdirs = [
-    "./artdlib-cpp"
+    "./artdlib-cpp",
+    "./third-party"
 ];
 
 

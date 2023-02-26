@@ -374,7 +374,7 @@ module Rakish
 
           myFile = File.expand_path(__FILE__);
           genTasks=[];
-log.debug("#########  createLinkTask #{cfg.projectDir}/CMakeBuild.raked")
+# log.debug("#########  createLinkTask #{cfg.projectDir}/CMakeBuild.raked")
           genTask = file "#{cfg.projectDir}/CMakeExports.raked" => [myFile , cfg.projectFile ] do |t|
                cfg = t.config;
                generateCMakeExports(objs,cfg,t);

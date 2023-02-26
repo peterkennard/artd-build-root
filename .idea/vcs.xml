@@ -5,6 +5,7 @@
     <mapping directory="$PROJECT_DIR$/artd-rakish" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-cpp" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/artdlib-test/Vulkan-Samples" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/third-party" vcs="Git" />
   </component>
 </project>
