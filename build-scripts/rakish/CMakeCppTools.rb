@@ -36,7 +36,7 @@ module Rakish
           @orderedLibs_ = olibs;
         end
         @orderedLibs_;
-      end # getOrderedLibs
+    end # getOrderedLibs
 
     def getExportedLibs
       olibs=[]
@@ -48,7 +48,11 @@ module Rakish
         end
       end
       olibs
+    end
 
+    # an alias ot make names neater - needs big cleanup !
+    def addExportedLibs(libsArg)
+        addThirdPartyLibs(libsArg);
     end
 
     end # TargetConfig
@@ -272,21 +276,21 @@ module Rakish
 
                 if(cfg.targetPlatform =~ /Windows/)
                     if(libs.length > 0)
-                          f.puts("");
-                          libs.each do |lib|
-                              if(lib.end_with?(cfg.dllExt()))
-                                  f.puts("set_property( TARGET \"#{cmakeName}\" PROPERTY IMPORTED_LOCATION ")
-                                  f.puts("        \"#{lib}\")");
-                                  f.puts("");
-                              elsif(lib.end_with?(cfg.libExt()))
-                                  f.puts("set_property( TARGET \"#{cmakeName}\" PROPERTY IMPORTED_IMPLIB ")
-                                  f.puts("        \"#{lib}\")");
-                                  f.puts("");
-                              end
-                          end
-                     end
+                         f.puts("");
+                         libs.each do |lib|
+                             if(lib.end_with?(cfg.dllExt()))
+                                 f.puts("set_property( TARGET \"#{cmakeName}\" PROPERTY IMPORTED_LOCATION ")
+                                 f.puts("        \"#{lib}\")");
+                                 f.puts("");
+                             elsif(lib.end_with?(cfg.libExt()))
+                                 f.puts("set_property( TARGET \"#{cmakeName}\" PROPERTY IMPORTED_IMPLIB ")
+                                 f.puts("        \"#{lib}\")");
+                                 f.puts("");
+                             end
+                         end
+                    end
                 elsif(cfg.targetPlatform =~ /MacOS/ )
-                     if(libs.length > 0)
+                    if(libs.length > 0)
                        f.puts("");
                        libs.each do |lib|
                            if(lib.end_with?(cfg.dllExt()) || lib.end_with?(cfg.libExt()))
