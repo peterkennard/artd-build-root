@@ -2,15 +2,16 @@ myDir = File.dirname(File.expand_path(__FILE__));
 require "#{myDir}/ensure-rakish.rb"
 
 require "rakish";
+require "rakish/GitModule";
 require "rakish/CppProjects.rb";
 require "rakish/JavaProjects.rb";
+
 
 if(File.exists? "#{myDir}/../build-options.rb")
     require "#{myDir}/../build-options.rb"
 end
 
 require "rakish"
-
 require "rakish/CppProjects.rb";
 require "rakish/JavaProjects.rb";
 
