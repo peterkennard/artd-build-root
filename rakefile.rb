@@ -10,6 +10,8 @@ cfg = BuildConfig("root");
 
 task :libCppSetup => [] do
 	Git.clone("git.livingwork.com:/home/artd/newartd/artdlib-cpp", "#{myDir}/artdlib-cpp");
+# this just for importing old stuff
+	Git.clone("git.livingwork.com:/home/git/artdlib-cpp-new", "#{myDir}/artdlib-cpp-new");
 end
 
 task :setup => [:libCppSetup] do
