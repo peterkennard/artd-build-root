@@ -10,6 +10,9 @@ cfg = BuildConfig("root");
 
 task :libCppSetup => [] do
 	Git.clone("git.livingwork.com:/home/artd/newartd/artdlib-cpp", "#{myDir}/artdlib-cpp");
+	cd "#{myDir}/artdlib-cpp" do
+		system("rake setup");
+	end
 # this just for importing old stuff
 	Git.clone("git.livingwork.com:/home/git/artdlib-cpp-new", "#{myDir}/artdlib-cpp-new");
 end
@@ -35,8 +38,8 @@ Rakish.Project(
     :includes=>[Rakish::CppProjectModule, Rakish::GitModule ],
 	:name 		=> "artd-lib",
 	:id         => "371FD2F5-ED71-0114-8F52-D889C786B495",
-	:dependsUpon => subdirs,
-    :dependsUponOpt => [ './artdlib-test' ]
+#	:dependsUpon => subdirs,
+    :dependsUponOpt => [ subdirs, './artdlib-test' ]
 ) do
 
     export task :cleanAll => sourceSubdir do |t|
