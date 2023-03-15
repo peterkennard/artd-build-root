@@ -18,7 +18,7 @@ task :libCppSetup => [] do
 end
 
 task :thirdPartySetup do
-    Git.clone("git.livingwork.com:/home/artd/newartd/third-party.git" "#{myDir}/third-party");
+    Git.clone("git.livingwork.com:/home/artd/newartd/third-party.git", "#{myDir}/third-party");
 	cd "#{myDir}/third-party" do
 		system("rake setup");
 	end
