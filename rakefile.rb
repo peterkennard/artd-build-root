@@ -17,7 +17,14 @@ task :libCppSetup => [] do
 	Git.clone("git.livingwork.com:/home/git/artdlib-cpp-new", "#{myDir}/artdlib-cpp-new");
 end
 
-task :setup => [:libCppSetup] do
+task :thirdPartySetup do
+    Git.clone("git.livingwork.com:/home/artd/newartd/third-party.git" "#{myDir}/third-party");
+	cd "#{myDir}/third-party" do
+		system("rake setup");
+	end
+end
+
+task :setup => [:libCppSetup, :thirdPartySetup ] do
 	puts "setup complete."
 end
 
