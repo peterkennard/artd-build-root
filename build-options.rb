@@ -47,8 +47,9 @@ Rakish.Configuration :include=>[ CppProjectConfig, JavaProjectConfig ] do |cfg|
 
     if(cpp.targetPlatform =~ /Windows/)
 
-        cfg.resourceDir = "#{cfg.buildDir}/production/.artd";
-        cpp.setCMakeGenerator("Visual Studio 17 2022");
+        cfg.resourceDir = "#{cfg.buildDir}/bin/resources";
+        # cfg.resourceDir = "#{cfg.buildDir}/production/.artd";
+        cpp.setCMakeGenerator("Visual Studio 16 2019");
 
     elsif(cpp.targetPlatform =~ /Mac/ )
 
@@ -56,7 +57,6 @@ Rakish.Configuration :include=>[ CppProjectConfig, JavaProjectConfig ] do |cfg|
         # override defaults here for the XCode build
         cfg.nativeLibDir = "#{cfg.buildDir}/lib/Debug";
         cfg.binDir = "#{cfg.buildDir}/bin/Debug";
-
         cpp.setCMakeGenerator("Xcode");
 
         # cpp.setCMakeGenerator("Unix Makefiles");

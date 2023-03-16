@@ -1,5 +1,6 @@
 build
 *.raked
-ardlib-cpp
+artdlib-cpp
+artdlib-cpp-new
 artd-rakish
 artdlib-test
