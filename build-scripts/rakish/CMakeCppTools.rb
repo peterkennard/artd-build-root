@@ -328,8 +328,10 @@ module Rakish
             case(cfg.targetType)
                 when 'APP'
                         atype = "";
-                        if(cfg.appType =~ /window/i)
-                            atype = "WIN32";
+                        if(cfg.targetPlatform =~ /Windows/ )
+                            if(cfg.appType =~ /window/i)
+                                atype = "WIN32";
+                            end
                         end
                     f.puts("\nadd_executable(\"#{cmakeName}\" #{atype}");
                 when 'LIB'
