@@ -278,11 +278,11 @@ module Rakish
                     if(libs.length > 0)
                          f.puts("");
                          libs.each do |lib|
-                             if(lib.end_with?(cfg.dllExt()))
+                             if(lib.end_with?(".dll"))
                                  f.puts("set_property( TARGET \"#{cmakeName}\" PROPERTY IMPORTED_LOCATION ")
                                  f.puts("        \"#{lib}\")");
                                  f.puts("");
-                             elsif(lib.end_with?(cfg.libExt()))
+                             elsif(lib.end_with?(".lib"))
                                  f.puts("set_property( TARGET \"#{cmakeName}\" PROPERTY IMPORTED_IMPLIB ")
                                  f.puts("        \"#{lib}\")");
                                  f.puts("");
