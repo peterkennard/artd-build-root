@@ -6,8 +6,8 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 if(APPLE)
-    # this is for vulkan ( TBD cleaned up )
-    include_directories("/usr/local/include")
+    # this is for vulkan and mac environments ( TBD cleaned up )
+    include_directories("/usr/local/include" "/opt/homebrew/include")
 elseif(WIN32)
 
     if(DEFINED ENV{VULKAN_SDK})
