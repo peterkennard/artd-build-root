@@ -1,4 +1,5 @@
 build
+temp
 *.raked
 artdlib-cpp
 artdlib-cpp-new
