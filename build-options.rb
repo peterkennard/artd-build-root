@@ -36,13 +36,15 @@ Rakish.Configuration :include=>[ CppProjectConfig, JavaProjectConfig ] do |cfg|
 
     cfg.verbose = false;
     cfg.buildDir = "#{myDir}/build";
+    cfg.thirdPartyPath = "#{myDir}/third-party";
+    cfg.artdlibPath = "#{myDir}/artdlib-cpp";
 
 
     cfg.java_home = ENV['JAVA_HOME'];
     cpp = cfg.cpp;
 
     cpp.cppDefine('ARTD_SUPPORT_STD_STRING');
-    # this is likely a bit obsolete as we arenow delagating a lot more to CMake
+    # this is likely a bit obsolete as we are now delegating a lot more to CMake
     cpp.setToolchain('rakish/CMakeCppTools.rb', "CMakeBased" );
 
     if(cpp.targetPlatform =~ /Windows/)
@@ -60,8 +62,6 @@ Rakish.Configuration :include=>[ CppProjectConfig, JavaProjectConfig ] do |cfg|
         cfg.nativeLibDir = "#{cfg.buildDir}/lib/Debug";
         cfg.binDir = "#{cfg.buildDir}/bin/Debug";
         cpp.setCMakeGenerator("Xcode");
-
-        # cpp.setCMakeGenerator("Unix Makefiles");
     end
 end
 
