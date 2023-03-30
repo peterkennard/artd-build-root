@@ -35,12 +35,14 @@ task :setup => [:libCppSetup, :testSetup ] do
 	puts "setup complete."
 end
 
-subdirs = [
-    './artdlib-cpp',
-    './third-party',
-	'./artdlib-test'
-];
-
+subdirs=[]
+unless (ARGV.length > 0 && (ARGV[0] =~ /setup/))
+    subdirs = [
+        './artdlib-cpp',
+        './third-party',
+        './artdlib-test'
+    ];
+end
 
 if(cfg.targetPlatform =~ /MacOS/ )
     task :build => [ :includes ] do
@@ -48,13 +50,11 @@ if(cfg.targetPlatform =~ /MacOS/ )
     end
 end
 
-
 Rakish.Project(
     :includes=>[Rakish::CppProjectModule, Rakish::GitModule ],
 	:name 		=> "artd-lib",
 	:id         => "371FD2F5-ED71-0114-8F52-D889C786B495",
-#	:dependsUpon => subdirs,
-    :dependsUponOpt => [ subdirs, './artdlib-test' ]
+    :dependsUponOpt => subdirs
 ) do
 
     export task :cleanAll => sourceSubdir do |t|
