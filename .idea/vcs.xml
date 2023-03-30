@@ -7,6 +7,5 @@
     <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-jlib-base" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-test" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/third-party" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/vk-spirv-reflect/SPIRV-reflect" vcs="Git" />
   </component>
 </project>
