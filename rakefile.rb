@@ -36,7 +36,9 @@ task :setup => [:libCppSetup, :testSetup ] do
 end
 
 subdirs=[]
-unless (ARGV.length > 0 && (ARGV[0] =~ /setup/))
+
+# TODO: make some sort of "ignoreDependencies" or isSetupTask function
+unless (ARGV.length > 0 && ((ARGV[0] =~ /setup/) || (ARGV[0] =~ /Setup/) ))
     subdirs = [
         './artdlib-cpp',
         './third-party',
