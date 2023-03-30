@@ -9,7 +9,7 @@ myDir = File.dirname(__FILE__);
 cfg = BuildConfig("root");
 
 task :libCppSetup => [] do
-	Git.clone("git.livingwork.com:/home/artd/newartd/artdlib-cpp", "#{myDir}/artdlib-cpp");
+	Git.clone("https://github.com/peterkennard/artdlib-cpp.git", "#{myDir}/artdlib-cpp");
 	cd "#{myDir}/artdlib-cpp" do
 		system("rake setup");
 	end
