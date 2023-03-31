@@ -3,18 +3,29 @@
 
 ## Windows
 
-You mush have ruby and rake installed, all the rest is built
-The build target genProject will generate a Visual Studio 2019 project in the ./build folder
-
+* You mush have ruby and rake installed, all the rest is built.
+* default project generator is "Visual Studio 16 2019"
 ## Mac
 
-You must have libpng installed via "brew install libpng"
-The build target genProject will generate an Xcode project in the ./build folder
+* You must have libpng installed via "brew install libpng" for graphics items
+* default project generator is "Xcode"
 
-### Common Build targets
+### ruby rake Build targets
 
-From the root directory after cloning this root folder.
+**Run from root directory** after cloning this root folder.
 
-* "rake setup"  # downloads base subdirectories
-* "rake genProject" # will download needed third party source, build it, and generate an IDE project
-* "rake resources" # will copy or generate resources for the apps to the runtime area in ./build/bin
+* **"rake setup"** downloads base subdirectories
+   * Must be done as a single target on command line ie: "rake setup" NOT "rake setup someOtherTask"
+
+* **"rake vendorLibs"** Downloads and builds third party libraries specified in "third-party"
+
+* **"rake genProject"** Generate an IDE or buildable project
+  * Outputs to "./build" 
+  * vendorLibs is a dependency. ( this will do both )  
+  * The Cmake generator for creating the project is specified in "./build-options.rb" 
+
+* **"rake resources"** Copy or generate resources for the apps to the runtime area in ./build/bin
+  * outputs to "./build/bin/resources" 
+
+* **"rake cleanAll"** Delete the build directory, and all the third party library builds.
+   * Will NOT delete third party source or library download caches, only the build output 
