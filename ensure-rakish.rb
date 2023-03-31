@@ -15,7 +15,7 @@ if (ARGV.length > 0 && ARGV[0] === "__recursing__")
 else
     begin
         unless File.file?("#{myDir}/artd-rakish/lib/rakish.rb")
-            puts("forcing load error !!!")
+            # puts("forcing load error !!!")
             raise LoadError; # force it to download
         end
         require "#{myDir}/artd-rakish/rakish";
