@@ -28,7 +28,6 @@ else
 
         require "#{myDir}/artd-rakish/rakish";
 
-        system "git config --global --replace-all core.autocrlf true";
         exec "rake __recursing__ #{ARGV.join(" ")}"
     end
 end
