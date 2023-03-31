@@ -25,7 +25,6 @@ else
         system("rm -fr \"#{myDir}/artd-rakish\"")
         puts "downloading artd-rakish build utility"
         system("git clone https://github.com/peterkennard/artd-rakish.git \"#{myDir}/artd-rakish\"");
-        system("git config -f ./.git/config --replace-all core.autocrlf true");
 
         require "#{myDir}/artd-rakish/rakish";
 
