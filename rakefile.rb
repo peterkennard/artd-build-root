@@ -9,15 +9,16 @@ myDir = File.dirname(__FILE__);
 cfg = BuildConfig("root");
 
 # You can disable password authentication with -o PasswordAuthentication=no. Full command would be:
-# ssh -nT -o PasswordAuthentication=no <host>
+# ssh -nT -o PasswordAuthentication=no <host>  # n no stdout output, T no tty input.
+# GIT_SSH_COMMAND=ssh -o PasswordAuthentication=no'
 
 task :libCppSetup => [] do
 	Git.clone("https://github.com/peterkennard/artdlib-cpp.git", "#{myDir}/artdlib-cpp");
 	cd "#{myDir}/artdlib-cpp" do
 		system("rake setup");
 	end
-# this just for importing old stuff
-	Git.clone("git.livingwork.com:/home/git/artdlib-cpp-new", "#{myDir}/artdlib-cpp-new");
+    # this just for importing old stuff
+	Git.cloneIfAvailable("git.livingwork.com:/home/git/artdlib-cpp-new", "#{myDir}/artdlib-cpp-new");
 end
 
 task :thirdPartySetup do
