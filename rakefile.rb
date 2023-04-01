@@ -8,6 +8,9 @@ module Rakish
 myDir = File.dirname(__FILE__);
 cfg = BuildConfig("root");
 
+# You can disable password authentication with -o PasswordAuthentication=no. Full command would be:
+# ssh -nT -o PasswordAuthentication=no <host>
+
 task :libCppSetup => [] do
 	Git.clone("https://github.com/peterkennard/artdlib-cpp.git", "#{myDir}/artdlib-cpp");
 	cd "#{myDir}/artdlib-cpp" do
@@ -39,7 +42,7 @@ end
 subdirs=[]
 
 # TODO: make some sort of "ignoreDependencies" or isSetupTask function
-unless (ARGV.length > 0 && ((ARGV[0] =~ /setup/) || (ARGV[0] =~ /Setup/) ))
+unless inSetupTask()
     subdirs = [
         './artdlib-cpp',
         './third-party',
