@@ -5,6 +5,7 @@
     <mapping directory="$PROJECT_DIR$/artd-rakish" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-cpp" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-jlib-base" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-jlib-io" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-jlib-thread" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-lib-logger" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-lib-vecmath" vcs="Git" />
