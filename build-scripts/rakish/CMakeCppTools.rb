@@ -323,7 +323,7 @@ module Rakish
 
             f.puts("\nproject (\"#{cmakeName}\")")
 
-            f.puts("\nfile(GLOB_RECURSE includes \"*.h\")")
+            f.puts("\nfile(GLOB_RECURSE includes \"*.h\" \"*.inl\")")
 
             case(cfg.targetType)
                 when 'APP'
