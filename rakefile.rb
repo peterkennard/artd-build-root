@@ -25,9 +25,10 @@ task :thirdPartySetup do
 end
 
 task :testSetup => [ :thirdPartySetup, :libCppSetup ] do
-    Git.clone("git.livingwork.com:/home/artd/newartd/artdlib-test", "#{myDir}/artdlib-test");
-	cd "#{myDir}/artdlib-test" do
-		system("rake setup");
+    if(Git.cloneIfAvailable("git.livingwork.com:/home/artd/newartd/artdlib-test", "#{myDir}/artdlib-test"))
+        cd "#{myDir}/artdlib-test" do
+            system("rake setup");
+        end
 	end
 end
 
@@ -55,7 +56,6 @@ end
 Rakish.Project(
     :includes=>[Rakish::CppProjectModule, Rakish::GitModule ],
 	:name 		=> "artd-lib",
-	:id         => "371FD2F5-ED71-0114-8F52-D889C786B495",
     :dependsUponOpt => subdirs
 ) do
 

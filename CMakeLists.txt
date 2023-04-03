@@ -17,5 +17,9 @@ elseif(WIN32)
 endif()
 
 add_subdirectory ("artdlib-cpp")
-add_subdirectory ("artdlib-test")
+
+if(IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/artdlib-test")
+    add_subdirectory ("artdlib-test")
+endif()
+
 add_subdirectory ("third-party")
