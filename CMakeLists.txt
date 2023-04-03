@@ -18,6 +18,7 @@ endif()
 
 add_subdirectory ("artdlib-cpp")
 
+# only if there !
 if(IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/artdlib-test")
     add_subdirectory ("artdlib-test")
 endif()
