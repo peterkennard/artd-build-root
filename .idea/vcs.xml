@@ -8,6 +8,7 @@
     <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-jlib-io" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-jlib-net" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-jlib-thread" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-jlib-util" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-lib-logger" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-lib-vecmath" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-test" vcs="Git" />
