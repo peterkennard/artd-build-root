@@ -353,7 +353,7 @@ module Rakish
                 f.puts("    set_property(TARGET \"#{cmakeName}\" PROPERTY CXX_STANDARD 20)")
             f.puts("endif()");
             f.puts("");
-            f.puts("target_include_directories(\"#{cmakeName}\" BEFORE PUBLIC \".\" \"#{getRelativePath(cfg.buildIncludeDir(),projectDir)}\")" )
+            f.puts("target_include_directories(\"#{cmakeName}\" BEFORE PUBLIC \".\" \"./src\" \"#{getRelativePath(cfg.buildIncludeDir(),projectDir)}\")" )
 
             defines = cfg.cppDefines();
             if(defines.length)
