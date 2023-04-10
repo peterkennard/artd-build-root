@@ -278,6 +278,10 @@ module Rakish
                     if(libs.length > 0)
                          f.puts("");
                          libs.each do |lib|
+                             rellib = getRelativePath(lib,project.projectDir);
+                             unless( File.path_is_absolute?(rellib) || rellib.start_with?('..'))
+                                 lib = "${CMAKE_CURRENT_SOURCE_DIR}/#{rellib}";
+                             end
                              if(lib.end_with?(".dll"))
                                  f.puts("set_property( TARGET \"#{cmakeName}\" PROPERTY IMPORTED_LOCATION ")
                                  f.puts("        \"#{lib}\")");
@@ -293,6 +297,10 @@ module Rakish
                     if(libs.length > 0)
                        f.puts("");
                        libs.each do |lib|
+                             rellib = getRelativePath(lib,project.projectDir);
+                             unless( File.path_is_absolute?(rellib) || rellib.start_with?('..'))
+                                 lib = "${CMAKE_CURRENT_SOURCE_DIR}/#{rellib}";
+                             end
                            if(lib.end_with?(cfg.dllExt()) || lib.end_with?(cfg.libExt()))
                                f.puts("set_property( TARGET \"#{cmakeName}\" PROPERTY IMPORTED_LOCATION ")
                                f.puts("        \"#{lib}\")");
