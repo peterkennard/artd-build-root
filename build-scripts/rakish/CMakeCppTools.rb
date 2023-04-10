@@ -384,30 +384,29 @@ module Rakish
         end # end File.open
     end
 
-      def createLinkTask(objs,cfg,project)
+    def createLinkTask(objs,cfg,project)
 
-          myFile = File.expand_path(__FILE__);
-          genTasks=[];
-# log.debug("#########  createLinkTask #{cfg.projectDir}/CMakeBuild.raked")
-          genTask = file "#{cfg.projectDir}/CMakeExports.raked" => [myFile , cfg.projectFile ] do |t|
-               cfg = t.config;
-               generateCMakeExports(objs,cfg,t);
-          end
-          genTask.config = cfg;
-          genTasks << genTask;
+        myFile = File.expand_path(__FILE__);
+        genTasks=[];
+        genTask = file "#{cfg.projectDir}/CMakeExports.raked" => [myFile , cfg.projectFile ] do |t|
+           cfg = t.config;
+           generateCMakeExports(objs,cfg,t);
+        end
+        genTask.config = cfg;
+        genTasks << genTask;
 
-          genTask = file "#{cfg.projectDir}/CMakeBuild.raked" => [ myFile, cfg.projectFile ] do |t|
-               cfg = t.config;
-               generateCMakeBuild(objs,cfg,t);
-          end
-          genTask.config = cfg;
-          genTasks << genTask;
+        genTask = file "#{cfg.projectDir}/CMakeBuild.raked" => [ myFile, cfg.projectFile ] do |t|
+           cfg = t.config;
+           generateCMakeBuild(objs,cfg,t);
+        end
+        genTask.config = cfg;
+        genTasks << genTask;
 
-          project.export task :cmakeGen=>[genTasks] do
-          end
-          nil # hack so caller in CppProject doesn't try to actually compile and link
+        project.export task :cmakeGen=>[genTasks] do
+        end
+        nil # hack so caller in CppProject doesn't try to actually compile and link
 
-      end
+    end
 
     end # end CMakeTools class
 
