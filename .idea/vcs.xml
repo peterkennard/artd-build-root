@@ -13,57 +13,5 @@
     <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-lib-vecmath" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-test" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/third-party" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/_deps/dawn-src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/_deps/dawn-src/third_party/abseil-cpp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/_deps/dawn-src/third_party/glfw" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/_deps/dawn-src/third_party/jinja2" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/_deps/dawn-src/third_party/markupsafe" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/_deps/dawn-src/third_party/vulkan-deps" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/_deps/dawn-src/third_party/vulkan-deps/spirv-headers/src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/_deps/dawn-src/third_party/vulkan-deps/spirv-tools/src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/_deps/dawn-src/third_party/vulkan-deps/vulkan-headers/src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/_deps/dawn-src/third_party/vulkan-deps/vulkan-loader/src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/_deps/dawn-src/third_party/vulkan-deps/vulkan-tools/src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/build/_deps/dawn-src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/build/_deps/dawn-src/third_party/abseil-cpp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/build/_deps/dawn-src/third_party/glfw" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/build/_deps/dawn-src/third_party/jinja2" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/build/_deps/dawn-src/third_party/markupsafe" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/build/_deps/dawn-src/third_party/vulkan-deps" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/build/_deps/dawn-src/third_party/vulkan-deps/spirv-headers/src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/build/_deps/dawn-src/third_party/vulkan-deps/spirv-tools/src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/build/_deps/dawn-src/third_party/vulkan-deps/vulkan-headers/src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/build/_deps/dawn-src/third_party/vulkan-deps/vulkan-loader/src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/WebGPU-distribution/build/_deps/dawn-src/third_party/vulkan-deps/vulkan-tools/src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/build" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/buildtools" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/buildtools/clang_format/script" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/buildtools/third_party/libc++/trunk" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/buildtools/third_party/libc++abi/trunk" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/testing" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/angle" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/glfw" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/glm" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/googletest" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/jinja2" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/markupsafe" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/swiftshader" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/tint" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/vulkan-deps" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/vulkan-deps/glslang/src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/vulkan-deps/spirv-cross/src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/vulkan-deps/spirv-headers/src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/vulkan-deps/spirv-tools/src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/vulkan-deps/vulkan-headers/src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/vulkan-deps/vulkan-loader/src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/vulkan-deps/vulkan-tools/src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/vulkan-deps/vulkan-validation-layers/src" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/vulkan_memory_allocator" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/third_party/zlib" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-dawn/dawn/tools/clang" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/google-depot-tools/dptools.orig" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/vk-samples/vulkan-guide" vcs="Git" />
   </component>
 </project>
