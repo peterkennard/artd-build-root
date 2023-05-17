@@ -39,13 +39,10 @@ module Rakish
     end # getOrderedLibs
 
     def getExportedLibs
-      olibs=[]
       if(thirdPartyLibs)
-        thirdPartyLibs.flatten.each do |tpl|
-          tpl = File.expand_path(tpl);
-          olibs << tpl;
-          next;
-        end
+        olibs = FileList.new(thirdPartyLibs.flatten);
+      else
+        olibs=[]
       end
       olibs
     end
