@@ -12,8 +12,6 @@
     <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-lib-logger" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-lib-vecmath" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-test" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/artdlib-test/webgpu-test-triangle/LearnWebGPU-Code" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/third-party" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/third-party/vk-samples/vulkan-guide" vcs="Git" />
   </component>
 </project>
