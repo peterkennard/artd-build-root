@@ -36,41 +36,23 @@ module Rakish
           @orderedLibs_ = olibs;
         end
         @orderedLibs_;
-    end # getOrderedLibs
+      end # getOrderedLibs
 
-    def getExportedLibs
-      olibs=[]
-      if(thirdPartyLibs)
-        thirdPartyLibs.flatten.each do |tpl|
-          tpl = File.expand_path(tpl);
-          olibs << tpl;
-          next;
+      def getExportedLibs
+        if(thirdPartyLibs)
+          olibs = FileList.new(thirdPartyLibs.flatten);
+        else
+          olibs=[]
         end
+        olibs
       end
-      olibs
-    end
 
-    # an alias ot make names neater - needs big cleanup !
-    def addExportedLibs(libsArg)
+      # an alias ot make names neater - needs big cleanup !
+      def addExportedLibs(libsArg)
         addThirdPartyLibs(libsArg);
-    end
+      end
 
     end # TargetConfig
-
-
-    # def createCompileTasks(files,cfg)
-    #   # format object files name
-    #
-    #   mapstr = "#{cfg.configuredObjDir()}/%f#{objExt()}";
-    #
-    #   objs=FileList[];
-    #   files.each do |source|
-    #     obj = source.pathmap(mapstr);
-    #     task = createCompileTask(source,obj,cfg);
-    #     objs << obj if task;  # will be the same as task.name
-    #   end
-    #   objs
-    # end
 
   end
 

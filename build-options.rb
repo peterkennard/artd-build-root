@@ -53,7 +53,8 @@ Rakish.Configuration :include=>[ CppProjectConfig, JavaProjectConfig ] do |cfg|
         # cfg.resourceDir = "#{cfg.buildDir}/production/.artd";
         cfg.nativeLibDir = "#{cfg.buildDir}/lib/Debug";
         cfg.binDir = "#{cfg.buildDir}/bin/Debug";
-        cpp.setCMakeGenerator("Visual Studio 16 2019");
+    #    cpp.setCMakeGenerator("Visual Studio 16 2019");
+        cpp.setCMakeGenerator("Visual Studio 17 2022");
 
     elsif(cpp.targetPlatform =~ /Mac/ )
 
