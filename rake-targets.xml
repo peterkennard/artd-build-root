@@ -10,7 +10,7 @@
     </target>
 
     <target name="nativeLibs" description="Build native libraries">
-        <echoproperties/>
+        <call-rake file="./rakefile.rb" target="nativeLibs" />
     </target>
 
 </project>
