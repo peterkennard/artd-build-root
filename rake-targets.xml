@@ -9,4 +9,8 @@
         <echoproperties/>
     </target>
 
+    <target name="nativeLibs" description="Build native libraries">
+        <echoproperties/>
+    </target>
+
 </project>
