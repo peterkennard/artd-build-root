@@ -1,7 +1,7 @@
 build
 temp
 *.raked
-*.raked
+*.log
 Third-party
 artdlib-cpp
 artdlib-cpp-new
