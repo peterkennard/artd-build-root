@@ -81,7 +81,7 @@ Rakish.Project(
 
 end # end project artd-lib
 
-task :nativeLibs => [ :vendorLibs, :genProject, :build ] do
+task :nativeLibs => [ :vendorLibs, :autogen, :genProject, :build ] do
 end
 
 end # Rakish
