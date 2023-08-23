@@ -2,8 +2,10 @@ build
 temp
 *.raked
 *.log
-Third-party
+third-party
+third-party-jars
 artdlib-cpp
+artdlib-java
 artdlib-cpp-new
 artd-rakish
 artdlib-test

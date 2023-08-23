@@ -13,5 +13,7 @@
     <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-lib-vecmath" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-test" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/third-party" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/third-party-jars" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/third-party/oss-jogl/jogl" vcs="Git" />
   </component>
 </project>

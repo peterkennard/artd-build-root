@@ -36,7 +36,40 @@ task :testSetup => [ :thirdPartySetup, :libCppSetup ] do
 	end
 end
 
-task :setup => [:libCppSetup, :testSetup ] do
+task :javaLibs => [] do
+
+    # super hack for now shoudl be gradleized.
+	Git.clone('git.didi.co:/home/didi/Pool_1/third-party-jars', "#{myDir}/didi/third-party-jars" );
+
+	artdLibs=[
+		'artd-util',
+		'artd-vecmath',
+		'artd-bml-base',
+		'artd-bml-interpreter',
+		'artd-bml-generator',
+		'artd-bml-net',
+		'artd-bml-servlet',
+		'artd-net',
+		'artd-uiscene',
+	];
+
+	artdLibs.each do |lib|
+		localDir = "#{myDir}/artdlib-java/#{lib}";
+		remoteDir = "git.livingwork.com:/home/didi/Pool_1/lib/artd/#{lib}.git";
+		Git.clone(remoteDir, localDir);
+		# setup remote branches
+		remoteDir = "git.didi.co:/home/git/artd/#{lib}.git";
+		FileUtils.cd localDir do
+            begin
+                system("git remote add z_artd -f -m master #{remoteDir}");
+            rescue
+            end
+         end
+	end
+end
+
+
+task :setup => [:javaLibs, :libCppSetup, :testSetup ] do
 	puts "setup complete."
 end
 
