@@ -104,7 +104,7 @@ Rakish.Project(
     export task :genProject do
         FileUtils.mkdir_p("./build")
         FileUtils.cd("./build") do
-            cmd = "#{cmakeCommand} -G \"#{cMakeGenerator}\""
+            cmd = "#{cmakeCommand} -G \"#{cMakeGenerator}\" -DWEBGPU_BACKEND=DAWN "
             cmd += " ..";
             system(cmd);
         end

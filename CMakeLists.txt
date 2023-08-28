@@ -1,13 +1,17 @@
 cmake_minimum_required(VERSION 3.24)
 project ("artdlib")
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
+
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 if(APPLE)
     # this is for vulkan and mac environments ( TBD cleaned up )
-    include_directories("/usr/local/include" "/opt/homebrew/include")
+#    include_directories("/usr/local/include")
+#    include_directories("/usr/local/include" "/opt/homebrew/include")
 elseif(WIN32)
 
     if(DEFINED ENV{VULKAN_SDK})
