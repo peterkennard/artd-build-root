@@ -10,6 +10,11 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 if(APPLE)
     # this is for vulkan and mac environments ( TBD cleaned up )
+
+# neither of these seem to work with apple Clang or Xcode projects !!!
+#    SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-unused-variable -Wno-unused-parameter")
+#    SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-unused-variable -Wno-unused-parameter")
+
 #    include_directories("/usr/local/include")
 #    include_directories("/usr/local/include" "/opt/homebrew/include")
 elseif(WIN32)
