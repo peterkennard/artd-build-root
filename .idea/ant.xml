@@ -3,7 +3,7 @@
   <component name="AntConfiguration">
     <buildFile url="file://$PROJECT_DIR$/rake-targets.xml">
       <customJdkName value="azul-17" />
-      <executeOn event="beforeCompilation" target="nativeLibs" />
+      <executeOn event="beforeCompilation" target="autogen" />
     </buildFile>
   </component>
 </project>

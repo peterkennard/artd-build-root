@@ -9,8 +9,13 @@
         <echoproperties/>
     </target>
 
+    <target name="autogen" description="generate code">
+        <call-rake file="./rakefile.rb" target="autogen" />
+    </target>
+
     <target name="nativeLibs" description="Build native libraries">
         <call-rake file="./rakefile.rb" target="nativeLibs" />
     </target>
+
 
 </project>
