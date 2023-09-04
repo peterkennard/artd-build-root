@@ -24,7 +24,16 @@ else
 
         system("rm -fr \"#{myDir}/artd-rakish\"")
         puts "downloading artd-rakish build utility"
-        system("git clone https://github.com/peterkennard/artd-rakish.git \"#{myDir}/artd-rakish\"");
+        localDir = "#{myDir}/artd-rakish";
+        system("git clone https://github.com/peterkennard/artd-rakish.git \"#{localDir}\"");
+		FileUtils.cd localDir do
+            begin
+                system("git remote add z_didi -f -m master git.livingwork.com:/home/didi/libs/artd/artd-rakish.git");
+            rescue
+            end
+        end
+
+        system("git clone  \"#{myDir}/artd-rakish\"");
 
         require "#{myDir}/artd-rakish/rakish";
 
