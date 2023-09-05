@@ -27,6 +27,8 @@ elseif(WIN32)
 
 endif()
 
+include_directories(./build/include)
+
 add_subdirectory ("artdlib-cpp")
 
 # only if there !
