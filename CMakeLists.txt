@@ -18,7 +18,7 @@ if(APPLE)
 #    SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-unused-variable -Wno-unused-parameter")
 
 #    include_directories("/usr/local/include")
-#    include_directories("/usr/local/include" "/opt/homebrew/include")
+#    include_directories("/usr/local/include" "/opt   /homebrew/include")
 elseif(WIN32)
 
     if(DEFINED ENV{VULKAN_SDK})
