@@ -2,6 +2,7 @@
   <configuration default="false" name="PanamaTest" type="Application" factoryName="Application" nameIsGenerated="true">
     <envs>
       <env name="DYLD_LIBRARY_PATH" value="$PROJECT_DIR$/build/lib/Debug" />
+      <env name="PATH" value="../build/bin/Debug;$PATH$" />
     </envs>
     <option name="MAIN_CLASS_NAME" value="com.artd.panamaTest.PanamaTest" />
     <module name="panama-test" />
