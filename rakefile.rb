@@ -85,10 +85,8 @@ unless inSetupTask()
     ];
 end
 
-if(cfg.targetPlatform =~ /MacOS/ )
-    task :build => [ :includes ] do
-        system("CMake --build build --config DEBUG");
-    end
+task :build => [ :includes ] do
+    system("CMake --build build --config DEBUG");
 end
 
 Rakish.Project(
