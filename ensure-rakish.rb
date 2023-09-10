@@ -33,7 +33,7 @@ else
             end
         end
 
-        system("git clone  \"#{myDir}/artd-rakish\"");
+        # system("git clone  \"#{myDir}/artd-rakish\"");
 
         require "#{myDir}/artd-rakish/rakish";
 
