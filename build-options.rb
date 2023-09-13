@@ -14,6 +14,7 @@ end
 require "rakish"
 require "rakish/CppProjects.rb";
 require "rakish/JavaProjects.rb";
+require "rakish/IntellijConfig.rb";
 
 module Rakish
 
