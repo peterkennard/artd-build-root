@@ -99,13 +99,23 @@ Rakish.Project(
         FileUtils.rm_rf(buildDir);  # remove recursive
     end
 
-    export task :genProject do
+    task :runConfigs do
+        if(targetPlatform =~ /MacOS/)
+            FileUtils.mkdir_p ("#{buildDir}/artdlib.xcodeproj/xcshareddata/xcschemes");
+            FileUtils.cp_r( "#{projectDir}/build-scripts/xcodeproj/xcshareddata/xcschemes/.", "#{buildDir}/artdlib.xcodeproj/xcshareddata/xcschemes");
+        end
+    end
+
+    task :projectFiles do
         FileUtils.mkdir_p("./build")
         FileUtils.cd("./build") do
             cmd = "#{cmakeCommand} -G \"#{cMakeGenerator}\" -DWEBGPU_BACKEND=DAWN"
             cmd += " ..";
             system(cmd);
         end
+    end
+
+    export task :genProject => [ :projectFiles, :runConfigs ] do
     end
 
     setupCppConfig :targetType =>'NONE' do |cfg|
