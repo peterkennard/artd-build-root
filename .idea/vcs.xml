@@ -3,17 +3,9 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artd-rakish" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/artdlib-cpp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-gpu-engine" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-jlib-base" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-jlib-io" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-jlib-net" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-jlib-thread" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-jlib-util" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-lib-logger" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-lib-vecmath" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-java/artd-util" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-test" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/third-party" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/artdlib-cpp" vcs="Git" />
   </component>
 </project>
