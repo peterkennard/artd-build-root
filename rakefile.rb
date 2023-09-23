@@ -53,20 +53,35 @@ task :javaLibs => [] do
 		'artd-uiscene',
 	];
 
+
 	artdLibs.each do |lib|
 		localDir = "#{myDir}/artdlib-java/#{lib}";
-		remoteDir = "git.livingwork.com:/home/git/artd/#{lib}.git";
-		if(Git.cloneIfAvailable(remoteDir, localDir))
-            # setup remote branch
-            remoteDir = "git.livingwork.com:/home/didi/Pool_1/lib/artd/#{lib}.git";
-            FileUtils.cd localDir do
-               begin
-                   system("git remote add z_artd -f -m master #{remoteDir}");
-               rescue
-               end
+		remoteDir = "git.livingwork.com:/home/didi/Pool_1/lib/artd/#{lib}.git";
+		Git.clone(remoteDir, localDir);
+		# setup remote branches
+		remoteDir = "git.didi.co:/home/git/artd/#{lib}.git";
+		FileUtils.cd localDir do
+            begin
+                system("git remote add z_artd -f -m master #{remoteDir}");
+            rescue
             end
-        end
+         end
 	end
+
+# 	artdLibs.each do |lib|
+# 		localDir = "#{myDir}/artdlib-java/#{lib}";
+# 		remoteDir = "git.livingwork.com:/home/git/artd/#{lib}.git";
+# 		if(Git.cloneIfAvailable(remoteDir, localDir))
+#             # setup remote branch
+#             remoteDir = "git.livingwork.com:/home/didi/Pool_1/lib/artd/#{lib}.git";
+#             FileUtils.cd localDir do
+#                begin
+#                    system("git remote add z_artd -f -m master #{remoteDir}");
+#                rescue
+#                end
+#             end
+#         end
+# 	end
 end
 
 

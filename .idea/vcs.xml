@@ -15,5 +15,14 @@
     <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-jlib-util" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-lib-logger" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/artdlib-cpp/artd-lib-vecmath" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/artdlib-java/artd-bml-base" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/artdlib-java/artd-bml-generator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/artdlib-java/artd-bml-interpreter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/artdlib-java/artd-bml-net" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/artdlib-java/artd-bml-servlet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/artdlib-java/artd-net" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/artdlib-java/artd-uiscene" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/artdlib-java/artd-util" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/artdlib-java/artd-vecmath" vcs="Git" />
   </component>
 </project>
