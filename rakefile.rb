@@ -8,7 +8,7 @@ task :buildTools => [] do
 
 
     ret = `which brew`;
-    unless(ret =~ /\/bin\/brew/ )
+    unless(ret =~ /homebrew\/bin\/brew/ )
         Rakish.log.error( "\n##### homebrew is required to run this build");
         puts( "\nTo install: \n");
         puts( "Launch Terminal.");
@@ -27,12 +27,12 @@ task :buildTools => [] do
     end
 
     ret = `which pip`;
-    unless(ret =~ /bin\/pip/ )
+    unless(ret =~ /homebrew\/bin\/pip/ )
         system('python3 -m ensurepip --updradeip --upgrade')
     end
 
     ret = `which conan`;
-    unless(ret =~ /bin\/conan/ )
+    unless(ret =~ /homebrew\/bin\/conan/ )
         system('pip install conan==1.95.0')
     end
 
