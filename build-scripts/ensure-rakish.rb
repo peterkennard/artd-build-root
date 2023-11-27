@@ -15,14 +15,14 @@ if (ARGV.length > 0 && ARGV[0] === "__recursing__")
 else
     begin
         unless File.file?("#{myDir}/artd-rakish/lib/rakish.rb")
-            puts("forcing load error !!!")
+            puts("forcing download of \"#{myDir>}/artd-rakish\".")
             raise LoadError; # force it to download
         end
 
         require "#{myDir}/artd-rakish/rakish";
 
     rescue LoadError => e
-        useSSH = File.exists?("#{ENV['HOME']}/66A46A08-2C23-49AE-95C0-69CE20B326A3.txt");
+        useSSH = File.exist?("#{ENV['HOME']}/66A46A08-2C23-49AE-95C0-69CE20B326A3.txt");
 #        system("rm -fr \"#{myDir}/artd-rakish"")
         puts " downloading artd-rakish build utility"
         localDir = "#{myDir}/artd-rakish";
