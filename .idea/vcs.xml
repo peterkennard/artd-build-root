@@ -10,5 +10,9 @@
     <mapping directory="$PROJECT_DIR$/native-libs/artd-jlib-util" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/native-libs/artd-lib-logger" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/native-libs/artd-lib-vecmath" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/third-party/oss-glm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/third-party/oss-jextract" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/third-party/oss-libpng" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/third-party/oss-zlib" vcs="Git" />
   </component>
 </project>
