@@ -1,20 +1,21 @@
 # This repository is the root of the artd-lib build <br> and the artd-gpu-engine.
 
 
-### first you clone artd-build-root then install ruby and rake and then do: "rake setup" 
+### First you clone artd-build-root then ensure ruby and rake are present, and then do: "rake setup" 
 
-## Windows ( not tested in a while )
-
-* You mush have ruby and rake installed, all the rest is built.
-* default project generator is "Visual Studio 16 2019"
 ## Mac
 
 * You must have libpng installed via "brew install libpng" for graphics items
 * default project generator is "Xcode"
 
+## Windows ( not tested in a while )
+
+* You mush have ruby and rake installed, all the rest is built.
+* default project generator is "Visual Studio 16 2019"
+
 ### ruby rake Build targets
 
-**Run from this root directory** after cloning this root folder.
+**Run these from this root directory** after cloning this root folder.
 
 * **"rake setup"** downloads base subdirectories
    * Must be done as a single target on command line ie: "rake setup" NOT "rake setup someOtherTask"
