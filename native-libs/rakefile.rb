@@ -49,7 +49,7 @@ Rakish.Project(
                 end
     	    else
     	        git.clone("https://github.com/peterkennard/#{lib}.git", localDir);
-    	    end
+      	    end
         end
     end
 
