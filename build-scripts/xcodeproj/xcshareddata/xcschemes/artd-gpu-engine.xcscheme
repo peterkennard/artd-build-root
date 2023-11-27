@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A1F92E5DB7C54D2BB3DE586D"
+               BlueprintIdentifier = "CA7BB006773746088DE2196C"
                BuildableName = "libartd-gpu-engine.dylib"
                BlueprintName = "artd-gpu-engine"
-               ReferencedContainer = "container:build/artdlib.xcodeproj">
+               ReferencedContainer = "container:build/artd-root.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -50,10 +50,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A1F92E5DB7C54D2BB3DE586D"
+            BlueprintIdentifier = "CA7BB006773746088DE2196C"
             BuildableName = "libartd-gpu-engine.dylib"
             BlueprintName = "artd-gpu-engine"
-            ReferencedContainer = "container:build/artdlib.xcodeproj">
+            ReferencedContainer = "container:build/artd-root.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

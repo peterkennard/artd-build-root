@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="rake-targets" default="echoProperties">
 
-    <import file="./artd-rakish/bin/artd-rakish-bin/call-rake.xml" />
+    <exec executable="./build-scripts/artd-rakish-find" outputproperty="rake.ant.xml">
+        <arg value="call-rake.xml"/>
+    </exec>
 
-    <property environment="env" />
-
-    <target name="echoProperties" description="dump properties to console">
-        <echoproperties/>
+    <!--
+    <target name="printProperties">
+        <echo message="${rake.ant.xml}" />
     </target>
+    -->
+    <import file="${rake.ant.xml}" />
 
-    <target name="autogen" description="generate code">
+    <target name="autogen" description="create generated code">
         <call-rake file="./rakefile.rb" target="autogen" />
     </target>
 
-    <target name="nativeLibs" description="Build native libraries">
-        <call-rake file="./rakefile.rb" target="nativeLibs" />
+    <target name="cleanAll" description="delete output directory">
+        <call-rake file="./build-scripts/rakefile.rb" target="cleanAll" />
+    </target>
+
+    <target name="genProject" description="delete output directory">
+        <call-rake file="./rakefile.rb" target="genProject" />
+    </target>
+
+    <target name="resources" description="copy resource files to runtime area">
+        <call-rake file="./rakefile.rb" target="resources" />
     </target>
 
 

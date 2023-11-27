@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "72027C3C5405438082137B78"
+               BlueprintIdentifier = "40308F8B5F1F44DE9D3365D7"
                BuildableName = "ArtdGpuEngineTest"
                BlueprintName = "ArtdGpuEngineTest"
-               ReferencedContainer = "container:build/artdlib.xcodeproj">
+               ReferencedContainer = "container:build/artd-root.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,19 +45,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "72027C3C5405438082137B78"
+            BlueprintIdentifier = "40308F8B5F1F44DE9D3365D7"
             BuildableName = "ArtdGpuEngineTest"
             BlueprintName = "ArtdGpuEngineTest"
-            ReferencedContainer = "container:build/artdlib.xcodeproj">
+            ReferencedContainer = "container:build/artd-root.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "DAWN_DEBUG_BREAK_ON_ERROR"
-            value = "1"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -69,10 +62,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "72027C3C5405438082137B78"
+            BlueprintIdentifier = "40308F8B5F1F44DE9D3365D7"
             BuildableName = "ArtdGpuEngineTest"
             BlueprintName = "ArtdGpuEngineTest"
-            ReferencedContainer = "container:build/artdlib.xcodeproj">
+            ReferencedContainer = "container:build/artd-root.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
