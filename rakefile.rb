@@ -6,41 +6,50 @@ Git = Rakish::Git;
 
 task :buildTools => [] do
 
+    config = Rakish::BuildConfig("root");
+    targetPlatform = config.targetPlatform;
 
-    ret = `which brew`;
-    unless(ret =~ /homebrew\/bin\/brew/ )
-        Rakish.log.error( "\n##### homebrew is required to run this build");
-        puts( "\nTo install: \n");
-        puts( "Launch Terminal.");
-        puts( "Write the following command:");
-        puts( "/bin/zsh -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\" → hit return.");
-        puts( "Now, enter your Mac password. Hit the return key on your keyboard to continue.\n\n\n");
+    if(targetPlatform =~ /MacOS/)
 
+        puts("Configuring for MacOS\n\n");
+
+        ret = `which brew`;
+        unless(ret =~ /homebrew\/bin\/brew/ )
+            Rakish.log.error( "\n##### homebrew is required to run this build");
+            puts( "\nTo install: \n");
+            puts( "Launch Terminal.");
+            puts( "Write the following command:");
+            puts( "/bin/zsh -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\" → hit return.");
+            puts( "Now, enter your Mac password. Hit the return key on your keyboard to continue.\n\n\n");
+
+            Rakish.log.error( "\n##### Exiting");
+            exit(0);
+        end
+
+        ret = `which python3`;
+        unless(ret =~ /homebrew\/bin\/python3/ )
+            system('brew install python3')
+        end
+
+        ret = `which pip`;
+        unless(ret =~ /homebrew\/bin\/pip/ )
+            system('python3 -m ensurepip --updradeip --upgrade')
+        end
+
+        ret = `which conan`;
+        unless(ret =~ /homebrew\/bin\/conan/ )
+            system('pip install conan==1.95.0')
+        end
+
+        ret = `which cmake`;
+        unless(ret =~ /homebrew\/bin\/cmake/ )
+            system('brew install cmake')
+        end
+    else
+        Rakish.log.error("Target platform #{targetPlatform} not yet supported");
         Rakish.log.error( "\n##### Exiting");
-
         exit(0);
     end
-
-    ret = `which python3`;
-    unless(ret =~ /homebrew\/bin\/python3/ )
-        system('brew install python3')
-    end
-
-    ret = `which pip`;
-    unless(ret =~ /homebrew\/bin\/pip/ )
-        system('python3 -m ensurepip --updradeip --upgrade')
-    end
-
-    ret = `which conan`;
-    unless(ret =~ /homebrew\/bin\/conan/ )
-        system('pip install conan==1.95.0')
-    end
-
-    ret = `which cmake`;
-    unless(ret =~ /homebrew\/bin\/cmake/ )
-        system('brew install cmake')
-    end
-
 end
 
 task :nativeLibs => [ :buildTools ]do
@@ -62,7 +71,6 @@ end
 
 subdirs=[]
 
-# TODO: make some sort of "ignoreDependencies" or isSetupTask function
 unless Rakish.inSetupTask()
 
     subdirs = [
