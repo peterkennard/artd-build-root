@@ -29,7 +29,7 @@ module Rakish
 
 	Rakish.Project( :dependsUpon =>dependsList,
                     :includes    => [Rakish::GitModule],
-	                :name 		 => "native-libs"
+	                :name 		 => "third-party"
 	) do
 
 	    export task :setup do
