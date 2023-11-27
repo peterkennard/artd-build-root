@@ -43,7 +43,7 @@ task :buildTools => [] do
 
 end
 
-task :nativeLibs => [ :didiBase ]do
+task :nativeLibs => [ :buildTools ]do
     FileUtils.cd "./third-party" do
         system("rake setup");
     end
