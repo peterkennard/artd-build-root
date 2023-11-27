@@ -37,7 +37,7 @@ task :buildTools => [] do
     end
 
     ret = `which cmake`;
-    unless(ret =~ /homebrew\/bin\/conan/ )
+    unless(ret =~ /homebrew\/bin\/cmake/ )
         system('brew install cmake')
     end
 
