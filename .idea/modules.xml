@@ -3,9 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/artd-root.iml" filepath="$PROJECT_DIR$/.idea/artd-root.iml" />
-      <module fileurl="file://$PROJECT_DIR$/artdlib-java/artd-util/artd-util.iml" filepath="$PROJECT_DIR$/artdlib-java/artd-util/artd-util.iml" />
-      <module fileurl="file://$PROJECT_DIR$/artdlib-test/panama-test/panama-test.iml" filepath="$PROJECT_DIR$/artdlib-test/panama-test/panama-test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/webgpu-tutorial.iml" filepath="$PROJECT_DIR$/.idea/webgpu-tutorial.iml" />
     </modules>
   </component>
 </project>

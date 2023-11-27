@@ -1,6 +1,96 @@
 myDir = File.dirname(__FILE__);
 require "#{myDir}/build-options.rb"
 
+Git = Rakish::Git;
+
+
+task :buildTools => [] do
+
+
+    ret = `which brew`;
+    unless(ret =~ /\/bin\/brew/ )
+        Rakish.log.error( "\n##### homebrew is required to run this build");
+        puts( "\nTo install: \n");
+        puts( "Launch Terminal.");
+        puts( "Write the following command:");
+        puts( "/bin/zsh -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\" → hit return.");
+        puts( "Now, enter your Mac password. Hit the return key on your keyboard to continue.\n\n\n");
+
+        Rakish.log.error( "\n##### Exiting");
+
+        exit(0);
+    end
+
+    ret = `which python3`;
+    unless(ret =~ /homebrew\/bin\/python3/ )
+        system('brew install python3')
+    end
+
+    ret = `which pip`;
+    unless(ret =~ /bin\/pip/ )
+        system('python3 -m ensurepip --updradeip --upgrade')
+    end
+
+    ret = `which conan`;
+    unless(ret =~ /bin\/conan/ )
+        system('pip install conan==1.95.0')
+    end
+
+    ret = `which cmake`;
+    unless(ret =~ /homebrew\/bin\/conan/ )
+        system('brew install cmake')
+    end
+
+end
+
+task :nativeLibs => [ :didiBase ]do
+    FileUtils.cd "./third-party" do
+        system("rake setup");
+    end
+    FileUtils.cd "./native-libs" do
+        system("rake setup");
+    end
+end
+
+task :setup => [:buildTools, :nativeLibs] do
+	puts "setup complete."
+end
+
+task :resources => [] do
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 require "rakish/GitModule"
 
 module Rakish
