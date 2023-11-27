@@ -2,5 +2,13 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/native-libs/artd-gpu-engine" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/native-libs/artd-jlib-base" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/native-libs/artd-jlib-io" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/native-libs/artd-jlib-net" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/native-libs/artd-jlib-thread" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/native-libs/artd-jlib-util" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/native-libs/artd-lib-logger" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/native-libs/artd-lib-vecmath" vcs="Git" />
   </component>
 </project>
