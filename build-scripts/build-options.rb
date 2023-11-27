@@ -58,21 +58,21 @@ Rakish.Configuration :include=>[ IntellijConfig, CppProjectConfig, JavaProjectCo
 		cfg.buildDir = "#{cfg.artdRoot}/build";
     end
 #    cfg.resourceDir = "#{cfg.buildDir}/production/.didi";
-
-    cfg.java_home = "#{ENV['JAVA_HOME']}";
-
-	cfg.ant_home = ENV['ANT_HOME'] || '/usr/share/ant';
-
-	java = cfg.java;
-
-    if(cfg.intellij) # we are running this from an intellij UI
-        java.addJavacFlags(cfg.intellij.javacFlags);
-    else
-        java.addJavacFlags("-Xlint:unchecked -encoding ISO-8859-1");
-    end
-
-    java.addJarSearchPath("#{myDir}/../third-party-jars");
-	java.addClassPaths( 'log4j-1.2.17.jar' );
+#
+#     cfg.java_home = "#{ENV['JAVA_HOME']}";
+#
+# 	cfg.ant_home = ENV['ANT_HOME'] || '/usr/share/ant';
+#
+# 	java = cfg.java;
+#
+#     if(cfg.intellij) # we are running this from an intellij UI
+#         java.addJavacFlags(cfg.intellij.javacFlags);
+#     else
+#         java.addJavacFlags("-Xlint:unchecked -encoding ISO-8859-1");
+#     end
+#
+#     java.addJarSearchPath("#{myDir}/../third-party-jars");
+# 	java.addClassPaths( 'log4j-1.2.17.jar' );
 
 #     # tomcat deployment options
 #
