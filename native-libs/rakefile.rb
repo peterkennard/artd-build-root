@@ -34,7 +34,7 @@ Rakish.Project(
 ) do
 
     export task :setup => [] do
-        useSSH = File.exists?("#{ENV['HOME']}/66A46A08-2C23-49AE-95C0-69CE20B326A3.txt");
+        useSSH = File.exist?("#{ENV['HOME']}/66A46A08-2C23-49AE-95C0-69CE20B326A3.txt");
 
         artdLibs.each do |lib|
 
