@@ -1,7 +1,7 @@
 # This repository is the root of the artd-lib build <br> and the artd-gpu-engine.
 
 
-### First you clone artd-build-root then ensure ruby and rake are present, and then do: "rake setup" 
+### First you clone artd-build-root then ensure ruby and rake are present, and then do: "rake setup"<br><BR>The build scripts do not work on ruby 3.x.x but require 2.x.x  Ruby 2.6.10 is what is installed by default on MacOS Ventura.
 
 ## Mac
 
