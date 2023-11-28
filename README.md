@@ -11,7 +11,7 @@
 ## Windows ( not tested in a while )
 
 * You mush have ruby and rake installed, all the rest is built.
-* default project generator is "Visual Studio 16 2019"
+* default project generator is "Visual Studio 17 2022"
 
 ### ruby rake Build targets
 
