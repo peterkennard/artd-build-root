@@ -8,7 +8,7 @@
 * You must have libpng installed via "brew install libpng" for graphics items
 * default project generator is "Xcode"
 
-## Windows ( not tested in a while )
+## Windows ( Currently does not build on Windows )
 
 * You mush have ruby and rake installed, all the rest is built.
 * default project generator is "Visual Studio 17 2022"
