@@ -5,8 +5,7 @@
 
 ## Mac
 
-* You must have libpng installed via "brew install libpng" for graphics items
-* default project generator is "Xcode"
+* You must have homebrew and XCode installed and use the Ruby 2.x.x and rake that comes with the MacOS. <br>The default project generator is "Xcode"
 
 ## Windows ( Currently does not build on Windows )
 
